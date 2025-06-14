@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('.dropdown').forEach(dropdown => {
                 if (dropdown !== this.parentElement) {
                     dropdown.classList.remove('open');
+                    dropdown.classList.remove('active'); // Remove active class from parent
                 }
             });
 
             // Toggle the clicked dropdown
             this.parentElement.classList.toggle('open');
+            this.parentElement.classList.toggle('active'); // Ensure parent gets active class
         });
     });
 
@@ -30,7 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!e.target.closest('.main-nav')) {
             document.querySelectorAll('.dropdown').forEach(dropdown => {
                 dropdown.classList.remove('open');
+                dropdown.classList.remove('active'); // Remove active class from parent
             });
         }
     });
 });
+
+

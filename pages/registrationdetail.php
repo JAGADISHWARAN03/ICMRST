@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Details of  ICMRST 2025</title>
+    <meta name="description" content="Join ICMRST 2025, the International Conference on Multidisciplinary Research in Science and Technology, to explore emerging trends, innovations, and groundbreaking research in diverse fields. Connect with global experts and researchers">
+    <meta name="keywords" content="ICMRST, International Conference, Multidisciplinary Research, Science and Technology, Research Conference, Innovation, Emerging Trends, Scientific Conference, Technology Conference, Global Research, Engineering, Computer Science, AI, Machine Learning, Sustainable Technology">
+    <link rel="icon" type="image/x-icon" href="assets\images\logo.png">
+    <meta property="og:title" content="Explore Trends in Science & Technology">
+    <meta property="og:description" content="Join ICMRST 2025, the International Conference on Multidisciplinary Research in Science and Technology, to explore emerging trends, innovations, and groundbreaking research in diverse fields. Connect with global experts and researchers">
+    <meta property="og:image" content="https://icmrst.org/assets/StockCake-Speaker%20Engages%20Audience_1740677439.jpg">
+    <meta property="og:url" content="icmrst.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Conference Site">
 
 
 <style>

@@ -23,11 +23,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.active {
-    color: yellow; /* Highlight color */
-    font-weight: bold;
-    text-decoration: underline;
-}
+
 
 header {
     position: relative;
@@ -117,9 +113,9 @@ header {
     transition: background-color 0.3s ease; /* Removed text transformation */
 }
 
-/* Hover: Change background color only */
+
 .dropdown-menu li a:hover {
-    /* background-color: yellow; */
+    
     color: black; /* Optional: Change text color for better contrast */
 }
 
@@ -130,6 +126,18 @@ header {
     cursor: pointer;
     color: white;
 }
+.main-nav li.active > a {
+    color:#b82659 ; /* Change this to match your site's theme */
+    font-weight: bold;
+    text-decoration: none;
+}
+.active{
+    color:none;
+    font-weight:none;
+    text-decoration:none;
+}
+
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -160,11 +168,13 @@ header {
         opacity: 1;
         animation: fadeIn 0.5s ease-in-out forwards;
     }
+   
 
     .main-nav ul li {
         padding: 15px;
         border-bottom: 1px solid ;
     }
+
 
     .dropdown-menu {
         position: static;

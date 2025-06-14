@@ -591,106 +591,99 @@
 }
 
 
-#sponsors {
-    position: relative;
-    padding: 30px 30px;
+.sponsors-section {
+           
+    background-color: white;
     text-align: center;
-    width: 100%;
-    margin: auto;
-    border-radius: 15px;
-    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); */
+    padding: 30px 0;
+   
+   
+    background-color: white;
+    
+}
+
+.sponsors-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    
+}
+
+.sponsors-section p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+   
+}
+
+.sponsor-slider-wrapper {
     overflow: hidden;
-}
-
-/* Background Blur Effect */
-.sponsor-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../assets/your-background.jpg') no-repeat center center/cover;
-    filter: blur(10px);
-    z-index: 1;
-}
-
-/* Make sure content is above the blurred background */
-.sponser-section-title, .sponsor-grid {
-    font-size: 2.5em;
-    color:#d12852;
-    margin-bottom: 20px;
     position: relative;
-    z-index: 2;
+    max-width: 1340px;
+    
+    margin: 0 auto;
 }
 
-/* Center the Sponsor Grid */
-.sponsor-grid {
+.sponsor-slider {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Center horizontally */
-    align-items: center; /* Align vertically */
-    gap: 10px;
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
+    gap: 20px;
+    animation: scrollSponsors 15s linear infinite;
 }
 
-/* Individual Sponsor Logos */
-.sponsor-logo {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.sponsor-slide {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(30% - 20px);
-    height: 150px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 10px;
 }
 
-.sponsor-logo img {
-    max-width: 90%;
-    max-height: 90%;
+.sponsor-slide img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
-/* Hover Effect */
-.sponsor-logo:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(209, 40, 82, 0.5);
+@keyframes scrollSponsors {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Hover effect to pause animation */
+.sponsor-slider-wrapper:hover .sponsor-slider {
+    animation-play-state: paused;
 }
 
 /* Responsive Adjustments */
-@media (min-width: 768px) {
-    .sponsor-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sponsor-logo {
-        width: 100%;
-        height: 150px;
+@media (max-width: 1024px) {
+    .sponsor-slide {
+        width: 120px;
+        height: 80px;
     }
 }
 
-@media (max-width: 767px) {
-    .sponsor-grid {
-        grid-template-columns: 1fr; /* Single column */
-        gap: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+@media (max-width: 768px) {
+    .sponsors-section {
+        padding: 60px 40px;
     }
 
-    .sponsor-logo {
-        width: 100%;
-        height: 120px;
+    .sponsors-section h2 {
+        font-size: 2rem;
+    }
+
+    .sponsor-slide {
+        width: 100px;
+        height: 70px;
     }
 }
-
 
 
 

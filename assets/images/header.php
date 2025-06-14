@@ -34,7 +34,7 @@
         </li>
 
         <!-- About Dropdown -->
-        <li class="dropdown <?= in_array($currentPage, ['about.php', 'scope.php', 'editoril.php']) ? 'active' : '' ?>"style="text-decoration: none;">
+        <li class="dropdown <?= in_array($currentPage, ['about.php', 'scope.php', 'conferencetracks.php','keydates.php']) ? 'active' : '' ?>"style="text-decoration: none;">
             <a href="#" class="dropdown-toggle">About ▾</a>
             <ul class="dropdown-menu">
                 <li class="<?= ($currentPage == 'about.php') ? 'active' : '' ?>" style="text-decoration: none;">
@@ -43,9 +43,13 @@
                 <li class="<?= ($currentPage == 'scope.php') ? 'active' : '' ?>" style="text-decoration: none;">
                     <a href="scope.php">Scope of the Conference</a>
                 </li>
-                <li class="<?= ($currentPage == 'editoril.php') ? 'active' : '' ?>" style="text-decoration: none;">
-                    <a href="editoril.php">Editorial Board</a>
+                <li class="<?= ($currentPage == 'conferencetracks.php') ? 'active' : '' ?>" style="text-decoration: none;">
+                    <a href="conferencetracks.php">Conference Tracks</a>
                 </li>
+                <li class="<?= ($currentPage == 'keydates.php') ? 'active' : '' ?>" style="text-decoration: none;">
+                    <a href="keydates.php">Key Dates</a>
+                </li>
+                
             </ul>
         </li>
 
@@ -54,14 +58,14 @@
         </li>
 
         <!-- Author Desk Dropdown -->
-        <li class="dropdown <?= in_array($currentPage, ['conferencetracks.php', 'keydates.php', 'registrationdetail.php', 'PaperSendmail.php']) ? 'active' : '' ?>" style="text-decoration: none;">
+        <li class="dropdown <?= in_array($currentPage, ['oranginisingCommitte.php','editoril.php', 'registrationdetail.php', 'PaperSendmail.php']) ? 'active' : '' ?>" style="text-decoration: none;">
             <a href="#" class="dropdown-toggle">Author Desk ▾</a>
             <ul class="dropdown-menu">
-                <li class="<?= ($currentPage == 'conferencetracks.php') ? 'active' : '' ?>" style="text-decoration: none;">
-                    <a href="conferencetracks.php">Conference Tracks</a>
+            <li class="<?= ($currentPage == 'editoril.php') ? 'active' : '' ?>" style="text-decoration: none;">
+                    <a href="oranginisingCommitte.php">Organising Committee</a>
                 </li>
-                <li class="<?= ($currentPage == 'keydates.php') ? 'active' : '' ?>" style="text-decoration: none;">
-                    <a href="keydates.php">Key Dates</a>
+            <li class="<?= ($currentPage == 'editoril.php') ? 'active' : '' ?>" style="text-decoration: none;">
+                    <a href="editoril.php">Editorial Board</a>
                 </li>
                 <li class="<?= ($currentPage == 'registrationdetail.php') ? 'active' : '' ?>" style="text-decoration: none;">
                     <a href="registrationdetail.php">Registration Details</a>

@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="assets\images\logo.png">
     <meta property="og:title" content="Explore Trends in Science & Technology">
     <meta property="og:description" content="Join ICMRST 2025, the International Conference on Multidisciplinary Research in Science and Technology, to explore emerging trends, innovations, and groundbreaking research in diverse fields. Connect with global experts and researchers">
-    <meta property="og:image" content="https://icmrst.org/assets/StockCake-Speaker%20Engages%20Audience_1740677439.jpg">
+    <meta property="og:image" content="assets\StockCake-Speaker Engages Audience_1740677439.jpg">
     <meta property="og:url" content="icmrst.org">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Conference Site">
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="index.css">  
 
 </head>
-
 <body>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 
@@ -73,7 +72,7 @@
             </div>
             <div class="speaker-card">
                 <div class="speaker-img">
-                    <img src="\assets\images\sp2.jpg" alt="Dr. Jane Smith">
+                <img src="assets\images\key_invitees_avatar.webp" alt="Dr. John Doe">
                 </div>
                 <div class="speaker-info">
                     <h3>Dr. Jane Smith</h3>
@@ -91,7 +90,7 @@
             </div> -->
             <div class="speaker-card">
                 <div class="speaker-img">
-                    <img src="\assets\images\sp4.jpg" alt="Dr. Emily Brown">
+                <img src="assets\images\key_invitees_avatar.webp" alt="Dr. John Doe">
                 </div>
                 <div class="speaker-info">
                     <h3>Dr. Emily Brown</h3>
@@ -144,35 +143,19 @@
 </section>
 
 
-<section class="sponsors-section">
-        <h2>Our Sponsors</h2>
-        <p>We are proud to partner with these amazing brands.</p>
+<div id="sponsors">
+    <div class="sponsor-background"></div> <!-- Blurred background -->
+    <h2 class="sponser-section-title">Our Sponsors</h2>
+    <div class="sponsor-grid">
+        <div class="sponsor-logo"><img src="\assets\images\spon1.png" alt="Sponsor 1"></div>
+        <div class="sponsor-logo"><img src="\assets\images\spon3.png" alt="Sponsor 2"></div>
+        <div class="sponsor-logo"><img src="\assets\images\spon4.png" alt="Sponsor 3"></div>
+        <div class="sponsor-logo"><img src="\assets\images\spon1.png" alt="Sponsor 1"></div>
+        <div class="sponsor-logo"><img src="\assets\images\spon3.png" alt="Sponsor 2"></div>
+        <div class="sponsor-logo"><img src="\assets\images\spon4.png" alt="Sponsor 3"></div>
+    </div>
+</div>
 
-        <div class="sponsor-slider-wrapper">
-            <div class="sponsor-slider">
-                <div class="sponsor-slide"><img src="../assets/gl-spon-one.png" alt="Sponsor 1"></div>
-                <div class="sponsor-slide"><img src="../assets/gl-spon-three.png" alt="Sponsor 2"></div>
-                <div class="sponsor-slide"><img src="../assets/gl-spon-two.png" alt="Sponsor 3"></div>
-                <div class="sponsor-slide"><img src="../assets/pt-spon-two.png" alt="Sponsor 4"></div>
-                <div class="sponsor-slide"><img src="../assets/pt-spon-four.png" alt="Sponsor 5"></div>
-                <div class="sponsor-slide"><img src="../assets/pt-spon-three.png" alt="Sponsor 6"></div>
-                <div class="sponsor-slide"><img src="../assets/Sponsorship.png" alt="Sponsor 7"></div>
-                <div class="sponsor-slide"><img src="../assets/Sponsoring.png" alt="Sponsor 8"></div>
-                <div class="sponsor-slide"><img src="../assets/Event Sponsorship.png" alt="Sponsor 9"></div>
-
-                <!-- Duplicate for seamless effect -->
-                <div class="sponsor-slide"><img src="../assets/gl-spon-one.png" alt="Sponsor 1"></div>
-                <div class="sponsor-slide"><img src="../assets/gl-spon-three.png" alt="Sponsor 2"></div>
-                <div class="sponsor-slide"><img src="../assets/gl-spon-two.png" alt="Sponsor 3"></div>
-                <div class="sponsor-slide"><img src="../assets/pt-spon-two.png" alt="Sponsor 4"></div>
-                <div class="sponsor-slide"><img src="../assets/pt-spon-four.png" alt="Sponsor 5"></div>
-                <div class="sponsor-slide"><img src="../assets/pt-spon-three.png" alt="Sponsor 6"></div>
-                <div class="sponsor-slide"><img src="../assets/Sponsorship.png" alt="Sponsor 7"></div>
-                <div class="sponsor-slide"><img src="../assets/Sponsoring.png" alt="Sponsor 8"></div>
-                <div class="sponsor-slide"><img src="../assets/Event Sponsorship.png" alt="Sponsor 9"></div>
-            </div>
-        </div>
-    </section>   
 <!-- price container -->
 <section class="pricecontainer ">
     <h2 class="pricing-title">Conference Registration Fees</h2>

@@ -2,7 +2,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
+
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -13,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $authorInstitution = $_POST['AuthorInstitution'];
     $authorCategory = $_POST['AuthorCategory'];
 
-    $adminEmail = "admin@example.com"; // Change this to the admin's email address
+    $adminEmail = "jagadishbit0@gmail.com"; 
 
     // Handle file upload
     $paperFile = $_FILES['PaperFile'];
@@ -26,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // SMTP settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Change to your SMTP server (e.g., smtp.gmail.com)
+        $mail->Host = '89.116.53.23'; // Change to your SMTP server (e.g., smtp.gmail.com)
         $mail->SMTPAuth = true;
         $mail->Username = 'jagadishbit0@gmail.com'; // Change to your email
         $mail->Password = 'ughe ebfb ewky gqep'; // Change to your email password
@@ -60,12 +61,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Submission</title>
+
+
+
+
+
     <style>
         body {
             font-family: Arial, sans-serif;
